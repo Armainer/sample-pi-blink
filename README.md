@@ -1,6 +1,8 @@
 # Pi blink
 
-Blinks the green activity LED on a Raspberry Pi once a second. The LED name is `ACT`. This is the smallest project that touches Pi hardware.
+This is sample code to test deployment and builds in Armainer. It is not an application to keep. When a build reaches the machine, switch the fleet to your own repository.
+
+The sample blinks the green activity LED on a Raspberry Pi once a second. The LED name is `ACT`.
 
 ## Board families
 
@@ -17,10 +19,10 @@ Do not use this sample on these fleets. The LED path is different, and it has no
 - Banana Pi BPI-M5
 - Generic x86 mini PC
 
-For those fleets, start with [Armainer/hello](https://github.com/Armainer/hello).
+For those fleets, start with [Armainer/sample-hello](https://github.com/Armainer/sample-hello).
 
 ## Run it
 
-In a Raspberry Pi fleet, build `https://github.com/Armainer/pi-blink.git` on branch `main`.
+In a Raspberry Pi fleet, build `https://github.com/Armainer/sample-pi-blink.git` on branch `main`.
 
 The container needs access to the LED, so the compose file sets `privileged: true`. The activity LED stops showing card activity while this container runs, and returns to that job when the container stops.
