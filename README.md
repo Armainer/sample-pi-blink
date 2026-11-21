@@ -26,3 +26,7 @@ For those fleets, start with [Armainer/sample-hello](https://github.com/Armainer
 In a Raspberry Pi fleet, build `https://github.com/Armainer/sample-pi-blink.git` on branch `main`.
 
 The container needs access to the LED, so the compose file sets `privileged: true`. The activity LED stops showing card activity while this container runs, and returns to that job when the container stops.
+
+## Licence
+
+MIT. You can use, change, and ship this sample, including in your own product. Keep the copyright notice from `LICENSE` in copies of the code.
