@@ -1,0 +1,7 @@
+services:
+  blink:
+    build: .
+    privileged: true
+    restart: unless-stopped
+    environment:
+      BLINK_LED: ACT
